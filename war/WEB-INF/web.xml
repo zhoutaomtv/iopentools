@@ -18,6 +18,14 @@
     <servlet-name>OnlineNotes</servlet-name>
     <servlet-class>com.appspot.iopentools.servlet.OnlineNotesServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>ListServlet</servlet-name>
+    <servlet-class>iopentools.contactbackup.control.ListContact</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ContactAdd</servlet-name>
+    <servlet-class>iopentools.contactbackup.control.SaveOrUpdateContact</servlet-class>
+  </servlet>
   
   <servlet-mapping>
     <servlet-name>greetServlet</servlet-name>
@@ -30,6 +38,14 @@
   <servlet-mapping>
     <servlet-name>OnlineNotes</servlet-name>
     <url-pattern>/onlinenotes</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListServlet</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContactAdd</servlet-name>
+    <url-pattern>/addcontact</url-pattern>
   </servlet-mapping>
   
   <!-- Default page to serve -->
